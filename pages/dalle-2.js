@@ -36,7 +36,7 @@ export default function ChatGPT() {
             const textPrompt = e.target.textPrompt.value;
             const size = e.target.size.value;
             setImageSize(getImageSize(size));
-            fetch("http://localhost:3000/api/img", {
+            fetch("/api/img", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

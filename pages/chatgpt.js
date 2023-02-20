@@ -21,7 +21,7 @@ export default function ChatGPT() {
           onSubmit={(e) => {
             e.preventDefault();
             const textPrompt = e.target.textPrompt.value;
-            fetch("http://localhost:3000/api/gen", {
+            fetch("/api/gen", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
